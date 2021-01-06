@@ -1,3 +1,5 @@
+# A Simple DJANGO app for evaluating online
+
 ## TODO
 
 * Edit an evaluation
