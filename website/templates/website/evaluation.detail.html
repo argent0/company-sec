@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Evaluation Detail</h2>
+<h3> Technician's information </h3>
+<ul>
+	<li> Name: {{ result.evaluation_target }} </li>
+	<li> Company: {{ result.target_company }} </li>
+	<li> Task: {{ result.target_task }} </li>
+</ul>
+<h3> Evaluation Results </h3>
+<ul>
+	{% for question in result.results %}
+	<li>
+		<ul>
+			<li> {{ question.question }} </li>
+			<li> {{ question.answer }} </li>
+		</ul>
+	</li>
+	{% endfor %}
+</ul>
+
+{% endblock %}
